@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using TastingWeb.Models;
 
 namespace TastingWeb.Data
 {
@@ -9,5 +10,6 @@ namespace TastingWeb.Data
             : base(options)
         {
         }
+        public DbSet<TastingWeb.Models.Joke> Joke { get; set; }
     }
 }
